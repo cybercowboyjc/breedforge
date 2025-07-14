@@ -134,8 +134,14 @@ with col2:
 # ----------------------
 # 📥 Inputs
 # ----------------------
-mare_description = st.text_area("📝 Describe the Mare", value=st.session_state.get("mare_description", ""), placeholder="e.g. Calm temperament, strong legs, high endurance")
+# mare_description = st.text_area("📝 Describe the Mare", value=st.session_state.get("mare_description", ""), placeholder="e.g. Calm temperament, strong legs, high endurance")
 sire_trait = st.selectbox("🧬 Select Sire’s Dominant Trait", ["Speed", "Temperament", "Size", "Stamina", "Agility"])
+
+mare_description = st.session_state.get("mare_description", "")
+
+if not mare_description:
+    st.warning("Please select a mare profile above to proceed.")
+    
 
 # ----------------------
 # Prediction & Output
@@ -194,7 +200,7 @@ if st.button("🔮 Predict Foal Traits"):
 
             except Exception as e:
                 st.error(f"OpenAI request failed: {e}")
-
+    
 # ----------------------
 # 🐴 Foal Name Generator
 # ----------------------
