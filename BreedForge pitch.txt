@@ -1,0 +1,7 @@
+“This is a prototype I built over the weekend called BreedForge. It’s an AI-powered trait prediction engine for horse breeding, using OpenAI’s GPT-3.5-turbo model to simulate expert reasoning based on the mare’s description and sire’s dominant traits.
+
+The predictions right now are language model-based — meaning they're not backed by real genetic data yet. But they’re built to feel plausible and domain-specific, showing how AI can be applied to niche biological forecasting.
+
+The long-term goal is to layer in genetic markers, breeding records, and CRISPR simulation to turn this from a conceptual tool into a biotech-grade prediction engine. That roadmap is outlined here in the sidebar.
+
+I built this to sharpen my AI dev chops while exploring how language models can be applied beyond the obvious — and it’s a great example of how rapid prototyping can turn an abstract idea into a functional UI in a matter of hours.”
